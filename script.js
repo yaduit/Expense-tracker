@@ -34,7 +34,7 @@ function renderExpenses(selectedMonth = "all"){
 
        expenseList.innerHTML="";
 
-       const expenses = JSON.parse(localStorage.getItem("expenses"))||[];
+       let expenses = JSON.parse(localStorage.getItem("expenses"))||[];
 
 
        if (selectedMonth !== "all") {
